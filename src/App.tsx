@@ -77,8 +77,8 @@ function App() {
           </div>
 
           {/* AI Content */}
-          <div className="bg-orange-300 p-6 rounded-2xl flex flex-col md:items-center gap-4 md:col-span-2 xl:col-span-3">
-            <h2 className="text-gray-900 text-2xl md:text-3xl md:text-center lg:text-4xl font-semibold">
+          <div className="bg-orange-300 p-6 rounded-2xl flex flex-col md:flex-row md:items-center md:p-12 md:justify-center gap-4 md:col-span-2 xl:col-span-3">
+            <h2 className="text-gray-900 text-2xl md:text-3xl lg:text-4xl font-semibold">
               Write your content using AI.
             </h2>
             <img src={img1} alt="ai-content" className="w-48 md:w-64 mt-4 lg:w-72"/>
