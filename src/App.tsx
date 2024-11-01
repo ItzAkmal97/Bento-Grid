@@ -10,75 +10,82 @@ function App() {
 
   return (
     <>
-    <main>
-    <div className='bg-gray-200 h-fit max-w-full mx-auto'>
-      {/* <section>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-      </section> */}
-      <section className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
-        {/* first block */}
-        <div className='bg-slate-900 mx-auto p-10 h-[300px] w-[330px] mt-4 rounded-2xl'>
-          <div className='flex flex-col items-center gap-2'>
-          <h1 className='text-white text-4xl text-center px-6 py-2'>
-            Social Media <span className='text-yellow-500'>10x</span> <i>Faster</i> with AI
-          </h1>
-          <img src={img5} alt="5 stars" className='max-h-32 max-w-48 '/>
-          <p className='text-gray-200 text-xl'>Over 4,000 5-star reviews</p>
-          </div> 
-        </div>
-
-        {/* 2nd block */}
-        <div className='bg-gray-100 mx-auto h-[170px] w-[330px] mt-4 rounded-2xl flex flex-col gap-2 p-4'>
-          <img src={img7} alt="multiple platforms"/>
-          <h1 className='text-gray-900 text-2xl font-semibold leading-none'>Manage multiple accounts and platforms.</h1>
+    <main className="bg-gray-200 font-sans min-h-screen py-8 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 auto-rows-auto">
+          {/* Feature Block - Dark */}
+          <div className="bg-slate-900 p-8 rounded-2xl md:col-span-2 lg:col-span-2 xl:col-span-2">
+            <div className="flex flex-col items-center gap-4">
+              <h1 className="text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-center">
+                Social Media <span className="text-yellow-500">10x</span> <i>Faster</i> with AI
+              </h1>
+              <img src={img5} alt="5 stars" className="w-44 sm:w-48 md:w-52 lg:w-56 xl:60"/>
+              <p className="text-gray-200 text-lg md:text-xl lg:text-2xl xl:text-3xl">Over 4,000 5-star reviews</p>
+            </div>
           </div>
-        
-        {/* 3rd block */}
-        <div className='bg-orange-300 mx-auto h-[230px] w-[330px] mt-4 rounded-2xl p-4 overflow-hidden'>
-          <h1 className='text-gray-900 text-2xl font-semibold leading-none'>Maintain a consistent posting schedule.</h1>
-          <img src={img3} alt="consistent schedule" className='max-h-40 mt-6'/>
-        </div>
 
-        {/* 4th block */}
-        <div className='bg-purple-200 mx-auto h-[485px] w-[330px] mt-4 rounded-2xl p-4 flex flex-col items-center gap-6'>
-          <h1 className='text-gray-900 text-2xl font-semibold leading-none text-center pt-5'>Schedule to social media.</h1>
-          <img src={img8} alt="schedule-posts" />
-          <p className='text-xl text-center leading-tight'>Optimize post timings to publish content at the perfect time for your audience.</p>
-        </div>
+          {/* Multiple Platforms */}
+          <div className="bg-gray-100 p-6 rounded-2xl flex flex-col justify-between">
+            <img src={img7} alt="multiple platforms" className="w-full mb-4 bg-transparent" />
+            <h2 className="text-gray-900 text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold">
+              Manage multiple accounts and platforms.
+            </h2>
+          </div>
 
-        {/* 5th block */}
-        <div className='bg-purple-500 mx-auto h-[400px] w-[330px] mt-4 rounded-2xl p-6 flex flex-col items-center gap-8'>
-          <img src={img6} alt="grow followers" className='max-h-52'/>
-          <h1 className='text-white text-3xl leading-none text-center px-8 py-4'>Grow followers with non-stop content.</h1>
-        </div>
+          {/* Consistent Schedule */}
+          <div className="bg-orange-300 p-6 rounded-2xl overflow-hidden">
+            <h2 className="text-gray-900 text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-4 leading-none">
+              Maintain a consistent posting schedule.
+            </h2>
+            <img src={img3} alt="consistent schedule" className="w-48 mt-36 sm:w-56 md:w-56 lg:w-60" />
+          </div>
 
-        {/* 6th block */}
-        <div className='bg-white mx-auto h-[240px] w-[330px] mt-4 rounded-2xl p-6 flex flex-col gap-4'>
-          <h1 className='text-gray-900 text-5xl leading-tight'>&gt;56%</h1>
-          <p className='text-xl leading-tight'>faster audience growth</p>
-          <img src={img2} alt="audience growth" className='w-44'/>
-        </div>
- 
-        {/* 7th block */}
-        <div className='bg-yellow-100 mx-auto h-[220px] w-[330px] mt-4 rounded-2xl p-6 flex flex-col gap-4'>
-          <h1 className='text-gray-900 text-3xl font-semibold leading-0'>Create and schedule content <i className='text-purple-500 font-bold'>quicker.</i></h1>
-          <img src={img4} alt="create post"className='w-40'/>
-        </div>
+          {/* Schedule Posts */}
+          <div className="bg-purple-200 p-6 rounded-2xl flex flex-col items-center gap-4 lg:col-span-2 xl:col-span-1">
+            <h2 className="text-gray-900 text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-center">
+              Schedule to social media.
+            </h2>
+            <img src={img8} alt="schedule-posts" className="w-full max-w-xs object-contain" />
+            <p className="text-lg md:text-xl text-center">
+              Optimize post timings to publish content at the perfect time for your audience.
+            </p>
+          </div>
 
-        <div className='bg-orange-300 mx-auto h-[385px] w-[330px] mt-4 rounded-2xl p-6 mb-4 flex flex-col gap-4'>
-          <h1 className='text-gray-900 text-3xl font-semibold leading-none'>Write your content using AI.</h1>
-          <img src={img1} alt="ai-content" className='w-64'/>
+          {/* Grow Followers */}
+          <div className="bg-purple-500 p-6 rounded-2xl flex flex-col items-center gap-6">
+            <img src={img6} alt="grow followers" className="w-full max-w-xs object-contain" />
+            <h2 className="text-white text-xl md:text-3xl lg:text-3xl xl:text-4xl text-center">
+              Grow followers with non-stop content.
+            </h2>
+          </div>
+
+          {/* Stats Block */}
+          <div className="bg-white p-6 rounded-2xl flex flex-col justify-between">
+            <div>
+              <h2 className="text-gray-900 text-4xl md:text-5xl font-bold">&gt;56%</h2>
+              <p className="text-lg md:text-xl mt-2">faster audience growth</p>
+            </div>
+            <img src={img2} alt="audience growth" className="w-32 md:w-44 mt-4" />
+          </div>
+
+          {/* Create Content */}
+          <div className="bg-yellow-100 p-6 rounded-2xl flex flex-col justify-between lg:pt-8 lg:row-span-2">
+            <h2 className="text-gray-900 text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold">
+              Create and schedule content <i className="text-purple-500 font-bold">quicker.</i>
+            </h2>
+            <img src={img4} alt="create post" className="w-32 md:w-40 mt-4 lg:w-60" />
+          </div>
+
+          {/* AI Content */}
+          <div className="bg-orange-300 p-6 rounded-2xl flex flex-col md:items-center gap-4 md:col-span-2 xl:col-span-3">
+            <h2 className="text-gray-900 text-2xl md:text-3xl md:text-center lg:text-4xl font-semibold">
+              Write your content using AI.
+            </h2>
+            <img src={img1} alt="ai-content" className="w-48 md:w-64 mt-4 lg:w-72"/>
+          </div>
         </div>
-      </section>
-    </div>
+      </div>
     </main>
-    
     </>
   )
 }
