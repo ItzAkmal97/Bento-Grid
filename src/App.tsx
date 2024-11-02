@@ -11,11 +11,11 @@ function App() {
   return (
     <>
     <main className="bg-gray-200 font-sans min-h-screen py-8 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 auto-rows-auto">
           {/* Feature Block - Dark */}
-          <div className="bg-slate-900 p-8 rounded-2xl md:col-span-2 lg:col-span-2 xl:col-span-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-            <div className="flex flex-col items-center gap-4 lg:gap-6 xl:pt-24 xl:gap-8">
+          <div className="bg-slate-900 p-8 rounded-2xl md:col-span-2 lg:col-span-1 xl:col-span-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+            <div className="flex flex-col items-center gap-4 lg:gap-6 xl:pt-4 xl:gap-8">
               <h1 className="text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-center">
                 Social Media <span className="text-yellow-500">10x</span> <i>Faster</i> with AI
               </h1>
@@ -25,7 +25,7 @@ function App() {
           </div>
 
           {/* Multiple Platforms */}
-          <div className="bg-gray-100 p-6 rounded-2xl flex flex-col justify-between shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+          <div className="bg-gray-100 p-6 rounded-2xl flex flex-col justify-between lg:col-span-2 xl-col-span-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
             <img src={img7} alt="multiple platforms" className="w-full mb-4 bg-transparent" />
             <h2 className="text-gray-900 text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold">
               Manage multiple accounts and platforms.
@@ -54,7 +54,7 @@ function App() {
           {/* Grow Followers */}
           <div className="bg-purple-500 p-6 rounded-2xl flex flex-col items-center gap-6 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
             <img src={img6} alt="grow followers" className="w-full max-w-xs object-contain" />
-            <h2 className="text-white text-xl md:text-3xl lg:text-3xl xl:text-4xl text-center">
+            <h2 className="text-white text-xl md:text-3xl lg:text-3xl text-center">
               Grow followers with non-stop content.
             </h2>
           </div>
