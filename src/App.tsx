@@ -41,7 +41,7 @@ function App() {
           </div>
 
           {/* Schedule Posts */}
-          <div className="bg-purple-200 p-6 rounded-2xl flex flex-col items-center gap-4 lg:col-span-2 xl:col-span-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+          <div className="bg-purple-200 p-6 rounded-2xl flex flex-col items-center gap-4 lg:col-span-2 xl:col-span-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
             <h2 className="text-gray-900 text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-center">
               Schedule to social media.
             </h2>
@@ -54,7 +54,7 @@ function App() {
           {/* Grow Followers */}
           <div className="bg-purple-500 p-6 rounded-2xl flex flex-col items-center gap-6 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
             <img src={img6} alt="grow followers" className="w-full max-w-xs object-contain" />
-            <h2 className="text-white text-xl md:text-3xl lg:text-3xl text-center">
+            <h2 className="text-white text-xl md:text-3xl lg:text-3xl xl:text-4xl text-center">
               Grow followers with non-stop content.
             </h2>
           </div>
@@ -69,7 +69,7 @@ function App() {
           </div>
 
           {/* Create Content */}
-          <div className="bg-yellow-100 p-6 rounded-2xl flex flex-col justify-between lg:pt-8 lg:row-span-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+          <div className="bg-yellow-100 p-6 rounded-2xl flex flex-col justify-between lg:pt-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
             <h2 className="text-gray-900 text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold">
               Create and schedule content <i className="text-purple-500 font-bold">quicker.</i>
             </h2>
