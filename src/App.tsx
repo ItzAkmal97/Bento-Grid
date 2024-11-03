@@ -6,10 +6,12 @@ import img5 from './assets/illustration-five-stars.webp';
 import img6 from './assets/illustration-grow-followers.webp';
 import img7 from './assets/illustration-multiple-platforms.webp';
 import img8 from './assets/illustration-schedule-posts.webp';
+import Header from './Header';
 function App() {
 
   return (
     <>
+    <Header />
     <main className="bg-gray-200 font-sans min-h-screen py-8 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 auto-rows-auto">
