@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     <Header />
-    <main className="bg-gray-200 font-sans min-h-screen py-6 px-4">
+    <main className="bg-gray-100 font-sans min-h-screen py-6 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 auto-rows-auto">
           {/* Feature Block - Dark */}
@@ -71,7 +71,7 @@ function App() {
           </div>
 
           {/* Create Content */}
-          <div className="bg-yellow-100 p-6 rounded-2xl flex flex-col justify-between lg:pt-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+          <div className="bg-yellow-100 p-6 rounded-2xl flex flex-col justify-between shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
             <h2 className="text-gray-900 text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold">
               Create and schedule content <i className="text-purple-500 font-bold">quicker.</i>
             </h2>
@@ -79,13 +79,17 @@ function App() {
           </div>
 
           {/* AI Content */}
-          <div className="bg-orange-300 p-6 rounded-2xl flex flex-col md:flex-row md:items-center md:p-12 md:justify-center gap-4 md:col-span-2 xl:col-span-3 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+          <div className="bg-orange-300 p-6 rounded-2xl flex flex-col md:flex-row md:items-center md:p-12 md:justify-center gap-4 md:col-span-2 lg:col-span-3 lg:flex lg:justify-evenly xl:col-span-3 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
             <h2 className="text-gray-900 text-2xl md:text-3xl lg:text-4xl font-semibold">
               Write your content using AI.
             </h2>
             <img src={img1} alt="ai-content" className="w-48 md:w-64 mt-4 lg:w-72"/>
           </div>
         </div>
+      </div>
+      <div className="flex flex-col justify-center items-center mt-8">
+        <h1 className='mb-4 font-bold text-3xl'>Loading Spinner</h1>
+        <div className="animate-spin rounded-full h-16 w-16 border-4 border-gray-300 border-t-purple-500"></div>
       </div>
     </main>
     </>

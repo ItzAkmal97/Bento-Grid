@@ -2,7 +2,7 @@ import { ChevronDown } from 'lucide-react';
 
 const Header = () => {
   return (
-    <header className="py-4 px-4 bg-gray-200">
+    <header className="py-4 px-4 bg-gray-100">
       <nav className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -19,7 +19,7 @@ const Header = () => {
           </label>
 
           {/* Navigation Links */}
-          <div className="fixed inset-y-0 right-0 w-64 bg-gray-200 shadow-lg transform translate-x-full 
+          <div className="fixed inset-y-0 right-0 w-64 bg-gray-100 shadow-lg transform translate-x-full 
                           peer-checked:translate-x-0 transition-transform duration-300 ease-in-out
                           md:static md:transform-none md:shadow-none md:w-auto md:flex md:items-center">
             <ul className="flex flex-col p-4 space-y-4 md:flex-row md:space-y-0 md:space-x-8">
