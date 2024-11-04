@@ -1,8 +1,8 @@
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, X } from 'lucide-react';
 
 const Header = () => {
   return (
-    <header className="py-4 px-4 bg-gray-100">
+    <header className="px-6 py-4 bg-gray-100">
       <nav className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -22,7 +22,12 @@ const Header = () => {
           <div className="fixed inset-y-0 right-0 w-64 bg-gray-100 shadow-lg transform translate-x-full 
                           peer-checked:translate-x-0 transition-transform duration-300 ease-in-out
                           md:static md:transform-none md:shadow-none md:w-auto md:flex md:items-center">
-            <ul className="flex flex-col p-4 space-y-4 md:flex-row md:space-y-0 md:space-x-8">
+            {/* Close Button - Only visible on mobile */}
+            <label htmlFor="nav-toggle" className="absolute top-4 right-4 cursor-pointer md:hidden">
+              <X className="w-6 h-6 text-gray-600 hover:text-gray-900" />
+            </label>
+
+            <ul className="flex flex-col p-4 mt-12 space-y-4 md:mt-0 md:flex-row md:space-y-0 md:space-x-8">
               <li className="group relative">
                 <button className="flex items-center text-gray-500 hover:text-gray-900">
                   Features
